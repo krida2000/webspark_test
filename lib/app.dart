@@ -20,7 +20,12 @@ class MyApp extends StatelessWidget {
         create: (context) => HomeCubit(context.read<PathRepository>())..init(),
         child: MaterialApp(
           title: 'Webspark test',
-          theme: ThemeData.from(colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue, primary: Colors.blue)),
+          theme: ThemeData.from(
+            colorScheme: ColorScheme.fromSeed(
+              seedColor: Colors.blue,
+              primary: Colors.blue,
+            ),
+          ),
           routes: {
             Routes.home: (context) => const HomeView(),
             Routes.process: (context) => const ProcessView(),

@@ -15,6 +15,11 @@ class PathApi {
   }
 
   Future<void> sendResults(Uri uri, List<GridResult> results) async {
-    print((await _dio.postUri(uri, data: results.map((e) => e.toJson()).toList())).data);
+    print(
+      (await _dio.postUri(
+        uri,
+        data: results.map((e) => e.toJson()).toList(),
+      )).data,
+    );
   }
 }

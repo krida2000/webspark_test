@@ -16,13 +16,11 @@ class ProcessViewArguments {
   Uri uri;
 }
 
-
 class ResultsViewArguments {
   ResultsViewArguments({required this.results});
 
   List<GridResult> results;
 }
-
 
 class PreviewViewArguments {
   PreviewViewArguments({required this.result});

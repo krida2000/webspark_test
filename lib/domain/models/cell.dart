@@ -12,10 +12,7 @@ class Cell {
   bool available;
 
   Map<String, dynamic> toJson() {
-    return {
-      'x': x.toString(),
-      'y' : y.toString(),
-    };
+    return {'x': x.toString(), 'y': y.toString()};
   }
 
   @override

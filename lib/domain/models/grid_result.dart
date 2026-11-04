@@ -13,10 +13,7 @@ class GridResult {
   Map<String, dynamic> toJson() {
     return {
       'id': grid.id,
-      'result' : {
-        'steps': steps.map((e) => e.toJson()).toList(),
-        'path': path
-      }
+      'result': {'steps': steps.map((e) => e.toJson()).toList(), 'path': path},
     };
   }
 }

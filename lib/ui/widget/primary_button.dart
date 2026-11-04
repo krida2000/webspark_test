@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
 class PrimaryButton extends StatelessWidget {
-  const PrimaryButton({super.key, required this.onPressed, required this.title});
+  const PrimaryButton({
+    super.key,
+    required this.onPressed,
+    required this.title,
+  });
 
   final void Function()? onPressed;
 
@@ -18,10 +22,7 @@ class PrimaryButton extends StatelessWidget {
       ),
       onPressed: onPressed,
       child: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(15.0),
-          child: Text(title),
-        ),
+        child: Padding(padding: const EdgeInsets.all(15.0), child: Text(title)),
       ),
     );
   }

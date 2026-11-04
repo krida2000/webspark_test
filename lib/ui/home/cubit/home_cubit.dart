@@ -32,12 +32,9 @@ class HomeCubit extends Cubit<HomeState> {
   Future<List<Grid>> getGrids(String stringUri) async {
     _asyncPrefs.setString('uri', stringUri);
 
-
-
-
     Uri? uri;
     try {
-      if(!urlRegExp.hasMatch(stringUri)) {
+      if (!urlRegExp.hasMatch(stringUri)) {
         throw UriFormatException();
       }
 

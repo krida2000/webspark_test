@@ -20,7 +20,7 @@ class ResultsView extends StatelessWidget {
           itemBuilder: (_, i) => InkWell(
             child: Container(
               decoration: BoxDecoration(
-                border: BoxBorder.fromLTRB(bottom: BorderSide())
+                border: BoxBorder.fromLTRB(bottom: BorderSide()),
               ),
               alignment: .center,
               padding: EdgeInsets.all(20.0),
