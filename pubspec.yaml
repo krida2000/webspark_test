@@ -11,11 +11,18 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8
+  flutter_bloc: ^9.1.1
+  shared_preferences: ^2.5.6
+  copy_with_extension: ^18.0.0
+  dio: ^5.11.1
+  collection: ^1.19.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
+  build_runner: ^2.10.0
+  copy_with_extension_gen: ^18.0.0
 
 flutter:
   uses-material-design: true
